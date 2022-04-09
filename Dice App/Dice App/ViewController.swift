@@ -10,16 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var doubleDiceOne: UIImageView!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
 //        singleDice.image = #imageLiteral(resourceName: "DiceSix")
         
-        doubleDiceOne.image = #imageLiteral(resourceName: "DiceFour")
+//        doubleDiceOne.image = #imageLiteral(resourceName: "DiceFour")
 //        doubleDiceTwo.image = #imageLiteral(resourceName: "DiceSix")
 
     }

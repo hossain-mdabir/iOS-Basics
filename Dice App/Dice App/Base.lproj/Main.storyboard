@@ -28,7 +28,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GVs-rh-0ow" kind="show" id="lHj-4L-hZh"/>
+                                    <segue destination="GVs-rh-0ow" kind="show" id="Jbc-hU-ZKp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXP-hY-Xgl">
@@ -37,6 +37,9 @@
                                 <state key="normal" title="Single Dice">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="v6G-x9-5e0" kind="show" id="fhE-Uc-yLQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -61,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Single Dice View Controller-->
         <scene sceneID="A6I-1d-6Nb">
             <objects>
-                <viewController id="v6G-x9-5e0" customClass="ViewController" customModule="Dice_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v6G-x9-5e0" customClass="SingleDiceViewController" customModule="Dice_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VcU-bW-c9q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,6 +87,9 @@
                                 <state key="normal" title="Roll">
                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollButtonSingleDice:" destination="v6G-x9-5e0" eventType="touchUpInside" id="tt2-3b-IMI"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="ZZv-jK-Qke">
                                 <rect key="frame" x="132" y="373" width="150" height="150"/>
@@ -94,15 +100,18 @@
                         <viewLayoutGuide key="safeArea" id="Fad-fE-yiV"/>
                     </view>
                     <navigationItem key="navigationItem" id="mcx-yc-nHb"/>
+                    <connections>
+                        <outlet property="singleDice1" destination="ZZv-jK-Qke" id="B65-tc-SqZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Yb-Jg-asa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1847.826086956522" y="-198.21428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Double Dice View Controller-->
         <scene sceneID="Lr8-Et-FxP">
             <objects>
-                <viewController id="GVs-rh-0ow" customClass="ViewController" customModule="Dice_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GVs-rh-0ow" customClass="DoubleDiceViewController" customModule="Dice_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6nC-Jc-H2E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,8 +131,11 @@
                                 <state key="normal" title="Roll">
                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollButtonDoubleDice:" destination="GVs-rh-0ow" eventType="touchUpInside" id="cbl-gL-DpJ"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceFour" translatesAutoresizingMaskIntoConstraints="NO" id="9MA-eo-njo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceSix" translatesAutoresizingMaskIntoConstraints="NO" id="9MA-eo-njo">
                                 <rect key="frame" x="20" y="385" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -137,7 +149,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="5Xe-XN-re3"/>
                     <connections>
-                        <outlet property="doubleDiceOne" destination="9MA-eo-njo" id="15t-YA-cVV"/>
+                        <outlet property="doubleDice1" destination="9MA-eo-njo" id="BwT-gD-ASA"/>
+                        <outlet property="doubleDice2" destination="qLd-sh-PpQ" id="Ydz-8O-Ejv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daI-zg-7gJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -165,8 +178,8 @@
     </scenes>
     <resources>
         <image name="DiceFive" width="100" height="100"/>
-        <image name="DiceFour" width="100" height="100"/>
         <image name="DiceOne" width="100" height="100"/>
+        <image name="DiceSix" width="100" height="100"/>
         <image name="DiceeLogo" width="196" height="128"/>
         <image name="GreenBackground" width="444.5" height="414"/>
     </resources>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B2DF100280011740021E830 /* SingleDiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2DF0FF280011740021E830 /* SingleDiceViewController.swift */; };
 		7B8CA23727FB41FD0034CE6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8CA23627FB41FD0034CE6A /* AppDelegate.swift */; };
 		7B8CA23927FB41FD0034CE6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8CA23827FB41FD0034CE6A /* SceneDelegate.swift */; };
 		7B8CA23B27FB41FD0034CE6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8CA23A27FB41FD0034CE6A /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B2DF0FF280011740021E830 /* SingleDiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDiceViewController.swift; sourceTree = "<group>"; };
 		7B8CA23327FB41FD0034CE6A /* Dice App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dice App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8CA23627FB41FD0034CE6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B8CA23827FB41FD0034CE6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,12 +62,13 @@
 			children = (
 				7B8CA23627FB41FD0034CE6A /* AppDelegate.swift */,
 				7B8CA23827FB41FD0034CE6A /* SceneDelegate.swift */,
+				7BBEC62627FEF92A00B04BED /* DoubleDiceViewController.swift */,
+				7B2DF0FF280011740021E830 /* SingleDiceViewController.swift */,
 				7B8CA23A27FB41FD0034CE6A /* ViewController.swift */,
 				7B8CA23C27FB41FD0034CE6A /* Main.storyboard */,
 				7B8CA23F27FB41FE0034CE6A /* Assets.xcassets */,
 				7B8CA24127FB41FE0034CE6A /* LaunchScreen.storyboard */,
 				7B8CA24427FB41FE0034CE6A /* Info.plist */,
-				7BBEC62627FEF92A00B04BED /* DoubleDiceViewController.swift */,
 			);
 			path = "Dice App";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				7B8CA23B27FB41FD0034CE6A /* ViewController.swift in Sources */,
 				7B8CA23727FB41FD0034CE6A /* AppDelegate.swift in Sources */,
 				7B8CA23927FB41FD0034CE6A /* SceneDelegate.swift in Sources */,
+				7B2DF100280011740021E830 /* SingleDiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
