@@ -30,21 +30,23 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="RHs-0D-jfc" secondAttribute="bottom" id="5QF-w6-Wnk"/>
+                            <constraint firstItem="RHs-0D-jfc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1xw-en-uXv"/>
+                            <constraint firstItem="RHs-0D-jfc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6eT-I9-ESX"/>
                             <constraint firstItem="FjC-yD-RIQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="UqH-Hu-lv3"/>
-                            <constraint firstItem="RHs-0D-jfc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YLb-QC-Zc2"/>
-                            <constraint firstItem="RHs-0D-jfc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="c7j-zE-eL0"/>
                             <constraint firstItem="uSZ-I3-hKH" firstAttribute="top" secondItem="FjC-yD-RIQ" secondAttribute="bottom" constant="30" id="ddw-ds-MCD"/>
                             <constraint firstItem="FjC-yD-RIQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dr3-tG-dXl"/>
                             <constraint firstItem="uSZ-I3-hKH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="h1L-s9-GnJ"/>
-                            <constraint firstItem="RHs-0D-jfc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ngO-Gr-wG3"/>
+                            <constraint firstAttribute="trailing" secondItem="RHs-0D-jfc" secondAttribute="trailing" id="hx8-in-iEk"/>
+                            <constraint firstAttribute="bottom" secondItem="RHs-0D-jfc" secondAttribute="bottom" id="i4f-lL-oxC"/>
+                            <constraint firstItem="RHs-0D-jfc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="vw5-eb-P3g"/>
+                            <constraint firstItem="RHs-0D-jfc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ye1-LP-SXn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
